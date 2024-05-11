@@ -39,39 +39,39 @@ function App() {
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 text-orange-500 bg-gradient-to-br from-slate-400 to-slate-800'>
-        <h1 className='text-lg hover:text-purple-400 text-white text-center my-3'>Password Generator</h1>
-        <div className='flex shadow rounded-lg overflow-hidden mb-4'>
+      <div className='w-3/5 mt-52 mx-auto shadow-md rounded-lg px-4 py-3 div1'>
+        <h1 className='text-3xl font-mono heading text-center mb-10 mt-7'>Password Generator</h1>
+        <div className='flex h-16 items-center justify-center shadow overflow-hidden mb-7'>
           <input
           type="text"
           value={password}
-          className='outline-none w-full py-1 px-3 '
+          className='outline-none w-96 h-14 py-1 px-3 rounded-l-lg'
           placeholder='password'
           readOnly
           ref={passwordRef} />
 
           <button
           onClick={copyPasswordToClipboard}
-          className='hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:shadow-red-800 hover:text-black outline-none  bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-3 py-0.5 shrink-0'
+          className='rounded-r-lg outline-none h-14 px-3 py-0.5 shrink-0'
           >Copy</button>
 
         </div>
 
-        <div className='flex text-sm gap-x-2'>
+        <div className='flex text-lg gap-x-5 pb-5 ml-5'>
 
-          <div className='flex items-center gap-x-1'>
+          <div className='flex items-center gap-x-7'>
             <input
             type="range"
             min = {6}
             max = {100}
             value={length}
-            className='cursor-pointer'
+            className='cursor-pointer range'
             onChange={(e) => {setLength(e.target.value)}} />
 
             <label>Length: {length}</label>
           </div>
 
-          <div>
+          <div className='flex items-center gap-x-1'>
             <input type="checkbox"
             defaultChecked = {numberAllowed}
             id='numberInput'
