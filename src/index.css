@@ -16,6 +16,7 @@
   
   .bgImage::after {
     content: "";
+    scale: 1.2;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,10 +46,10 @@
 input {
   background-color: var(--lgrey);
   color: var(--sand);
-  font-size: larger;
+  font-size: large;
   font-weight:bold;
   border: 1.7px solid var(--dbrown);
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.25rem;
 }
 
 
