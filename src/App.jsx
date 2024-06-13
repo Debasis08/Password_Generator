@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <div className='w-3/5 mt-52 mx-auto shadow-md rounded-lg px-4 py-3 div1'>
+      <div className='w-full sm:w-3/5 mt-52 mx-auto shadow-md rounded-lg px-4 py-3 div1'>
         <h1 className='text-3xl font-mono heading text-center mb-10 mt-7'>Password Generator</h1>
         <div className='flex h-16 items-center justify-center shadow overflow-hidden mb-7'>
           <input
@@ -57,7 +57,7 @@ function App() {
 
         </div>
 
-        <div className='flex text-lg gap-x-5 pb-5 ml-5'>
+        <div className='flex flex-col md:justify-center lg:flex-row text-lg gap-x-5 pb-5 ml-5'>
 
           <div className='flex items-center gap-x-7'>
             <input
